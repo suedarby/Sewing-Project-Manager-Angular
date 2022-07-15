@@ -3,14 +3,48 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { StashComponent } from './stash/stash.component';
+import { DashComponent } from './dash/dash.component';
+import { ProjectComponent } from './project/project.component';
+import { ShoppingComponent } from './shopping/shopping.component';
+import { BudgetComponent } from './budget/budget.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
+import { ContactComponent } from './contact/contact.component';
+import { FeaturesComponent } from './features/features.component';
+import { AboutComponent } from './about/about.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import { UserprofileComponent } from './userprofile/userprofile.component';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StashComponent,
+    DashComponent,
+    ProjectComponent,
+    ShoppingComponent,
+    BudgetComponent,
+    ContactComponent,
+    FeaturesComponent,
+    AboutComponent,
+    RegisterComponent,
+    LoginComponent,
+    UserprofileComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
