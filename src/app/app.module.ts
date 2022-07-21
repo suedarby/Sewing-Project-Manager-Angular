@@ -19,8 +19,12 @@ import { LoginComponent } from './login/login.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
 import { AdminComponent } from './admin/admin.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { StashedComponent } from './stashed/stashed.component';
 import { ShoppedComponent } from './shopped/shopped.component';
+import { StashedComponent } from './stashed/stashed.component';
+import { IonicModule } from '@ionic/angular';
+import { CategoryComponent } from './category/category.component';
+import { TagComponent } from './tag/tag.component';
+import { LocationComponent } from './location/location.component';
 
 @NgModule({
   declarations: [
@@ -38,8 +42,12 @@ import { ShoppedComponent } from './shopped/shopped.component';
     UserprofileComponent,
     AdminComponent,
     ProjectsComponent,
+    ShoppedComponent,
     StashedComponent,
-    ShoppedComponent
+    CategoryComponent,
+    TagComponent,
+    LocationComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -50,7 +58,8 @@ import { ShoppedComponent } from './shopped/shopped.component';
       // Register the ServiceWorker as soon as the application is stable
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
-    })
+    }),
+    IonicModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
