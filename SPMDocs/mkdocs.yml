@@ -1,0 +1,6 @@
+site_name: Sewing Project Manager
+site_url: https://sewingpm.com/
+nav:
+    - Home: index.md
+    - About: about.md
+theme: readthedocs
