@@ -18,6 +18,9 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
 import { AdminComponent } from './admin/admin.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { StashedComponent } from './stashed/stashed.component';
+import { ShoppedComponent } from './shopped/shopped.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { AdminComponent } from './admin/admin.component';
     RegisterComponent,
     LoginComponent,
     UserprofileComponent,
-    AdminComponent
+    AdminComponent,
+    ProjectsComponent,
+    StashedComponent,
+    ShoppedComponent
   ],
   imports: [
     BrowserModule,
