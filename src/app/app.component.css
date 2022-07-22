@@ -1,4 +1,5 @@
-TODO ELIMINATE COMMENTED OUT CODE
+/* TODO ELIMINATE COMMENTED OUT CODE */
+@import url("../styles.css");
 /* GLOBAL CSS */
 :host {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -110,7 +111,7 @@ TODO ELIMINATE COMMENTED OUT CODE
 
   .card.card-small {
     height: 16px;
-    
+
   }
 
   .card-container .card:not(.highlight-card) {
@@ -137,9 +138,9 @@ TODO ELIMINATE COMMENTED OUT CODE
   }
 
   /* .card.card.highlight-card span {
-   margin-left: 60px; 
+   margin-left: 60px;
   } */
-/* 
+/*
   svg#rocket {
     width: 80px;
     position: absolute;
