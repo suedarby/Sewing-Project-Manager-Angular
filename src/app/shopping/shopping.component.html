@@ -1,22 +1,28 @@
-<p>shopping works!</p>
+<h1>Shopping</h1>
 <section class="vh-100">
     <div class="container py-5 h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col">
           <div class="card" id="list1" style="border-radius: .75rem; background-color: #eff1f2;">
             <div class="card-body py-4 px-4 px-md-5">
-  
+
               <p class="h1 text-center mt-3 mb-4 pb-3 text-primary">
                 <i class="fas fa-check-square me-1"></i>
-                <u>My Todo-s</u>
+                <u>Shopping List</u>
               </p>
-  
+
               <div class="pb-2">
                 <div class="card">
                   <div class="card-body">
                     <div class="d-flex flex-row align-items-center">
                       <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1"
                         placeholder="Add new...">
+<!-- TODO hook in category drop down/add
+     TODO hook in project drop down must have a project started to add items to shopping list for it otherwise project is stash -->
+<!-- TODO pull data from collections -->
+                        <p> Category </p> <p> Project </p> <p> Store </p> <p> Cost </p>
+<!-- Store is free form and can also be a URL
+     TODO Cost should show in a future spending in budget -->
                       <a href="#!" data-mdb-toggle="tooltip" title="Set due date"><i
                           class="fas fa-calendar-alt fa-lg me-3"></i></a>
                       <div>
@@ -26,12 +32,16 @@
                   </div>
                 </div>
               </div>
-  
+
               <hr class="my-4">
-  
+<!-- TODO create code for filters
+     TODO add sorts for category and project -->
               <div class="d-flex justify-content-end align-items-center mb-4 pt-2 pb-3">
                 <p class="small mb-0 me-2 text-muted">Filter</p>
                 <select class="select">
+<!-- TODO change values to dynamic filters for category, project, store and cost -->
+<!-- TODO pull data from collections -->
+
                   <option value="1">All</option>
                   <option value="2">Completed</option>
                   <option value="3">Active</option>
@@ -45,7 +55,7 @@
                 <a href="#!" style="color: #23af89;" data-mdb-toggle="tooltip" title="Ascending"><i
                     class="fas fa-sort-amount-down-alt ms-2"></i></a>
               </div>
-  
+
               <ul class="list-group list-group-horizontal rounded-0 bg-transparent">
                 <li
                   class="list-group-item d-flex align-items-center ps-0 pe-3 py-1 rounded-0 border-0 bg-transparent">
@@ -134,27 +144,11 @@
                   </div>
                 </li>
               </ul>
-  
+
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- display results -->
-  <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">An item</li>
-      <li class="list-group-item">A second item</li>
-      <li class="list-group-item">A third item</li>
-    </ul>
-    <div class="card-body">
-      <a href="#" class="card-link">Card link</a>
-      <a href="#" class="card-link">Another link</a>
-    </div>
-  </div>
+
