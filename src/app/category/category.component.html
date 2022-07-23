@@ -1,27 +1,31 @@
-<h1>Category</h1>
-<p>Form for entering just a category</p>
 <div class="container">
+  <h1>Category</h1>
+  <p>Form for entering just a category</p>
+
   <form action="#">
-
     <label for="category">Category</label>&nbsp;
-    <input type="text" id="category" name="category" placeholder="Add a Category">
-&nbsp;
-<!-- TODO click event to submit to FireBase Category Collection -->
-    <input type="submit" value="Submit">
-
+    <input
+      type="text"
+      id="category"
+      name="category"
+      placeholder="Add a Category"
+    />
+    &nbsp;
+    <button class="btn btn-primary" type="submit" value="Submit">Add Category </button>
   </form>
   <div class="align-items-center align-text-center center">
-<!-- TODO *ngfor category and crud -->
-<!-- TODO use icons horizontal layout table?-->
-<!-- TODO inline edit -->
-
-<ul>
-  <li> shows a list of categories in the system  Update  Delete</li>
-
-</ul>
-
-
+    <ul class="p-3">
+      <li class="p-1">
+        shows a list of categories in the system
+        <button class="btn btn-primary">Update</button> &nbsp;
+        <button class="btn btn-primary">Delete</button>
+      </li>
+    </ul>
   </div>
 </div>
 
 <!-- TODO own collection categories -->
+<!-- TODO *ngfor category and crud -->
+<!-- TODO use icons horizontal layout table?-->
+<!-- TODO inline edit -->
+<!-- TODO click event to submit to FireBase Category Collection -->
