@@ -9,8 +9,6 @@ import { CategoryComponent } from './category/category.component';
 import { ContactComponent } from './contact/contact.component';
 import { DashComponent } from './dash/dash.component';
 import { FeaturesComponent } from './features/features.component';
-import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { LocationComponent } from './location/location.component';
 import { LoginComponent } from './login/login.component';
@@ -33,8 +31,6 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'dash', component: DashComponent},
   {path: 'features', component: FeaturesComponent},
-  {path: 'footer', component: FooterComponent},
-  {path: 'header', component: HeaderComponent},
   {path: 'home', component: HomeComponent},
   {path: 'location', component: LocationComponent},
   {path: 'login', component: LoginComponent},
@@ -47,13 +43,6 @@ const routes: Routes = [
   {path: 'stashed', component: StashedComponent},
   {path: 'tag', component: TagComponent},
   {path: 'userprofile', component: UserprofileComponent},
-
-  // {path: 'src/app/SPMDocs/site/index.html', component: RegisterComponent},
-
-
-
-
-
 
 
 ];
